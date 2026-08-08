@@ -486,4 +486,8 @@ SkyTemple_CN/
 
 特别感谢 **Chesyon** 和 **Frostbyte0x70**：PR #844 "Fix most build actions" 修复了 Windows/Mac 构建流水线（2025-11-09 合入），我们的 CN 版能基于 gvsbuild 2026 成功构建，直接受益于这两位的工作。
 
+### 界面翻译
+- **奈亚拉托电子**（SkyTemple Discord 社区名"电子"，用户名 `dianzi_71480`）：提供 SkyTemple 全部 UI 界面中文翻译。
+
+
 

@@ -36,8 +36,10 @@ GPL v3，基于 [SkyTemple](https://github.com/SkyTemple/skytemple) 修改。
 ## 致谢
 
 - SkyTemple 团队（特别感谢 Chesyon 和 Frostbyte0x70 的构建修复）
+- 奈亚拉托电子（dianzi_71480）：UI 界面中文翻译
 - Chesyon：PR #844 修复 Windows/Mac 构建流水线
 - Frostbyte0x70：PR #844 审查与合并
 - Givoill & 茸明_Edelherd：空之探险队脚本编辑教程
+
 
 
