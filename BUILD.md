@@ -481,8 +481,9 @@ SkyTemple_CN/
 
 ## 十四、特别致谢
 
-### 构建修复
-- **Chesyon**：PR #844 "Fix most build actions"，修复 Windows/Mac 构建流水线（2025-11-09 合入）
-- **Frostbyte0x70**：PR #844 的审查与合并
+### SkyTemple 团队
+感谢 SkyTemple 上游团队开发了这款优秀的 ROM 修改工具。
 
-我们的 CN 版能基于 gvsbuild 2026 成功构建，依赖这两位对官方构建系统的修复。
+特别感谢 **Chesyon** 和 **Frostbyte0x70**：PR #844 "Fix most build actions" 修复了 Windows/Mac 构建流水线（2025-11-09 合入），我们的 CN 版能基于 gvsbuild 2026 成功构建，直接受益于这两位的工作。
+
+
