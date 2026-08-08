@@ -4,7 +4,7 @@
 
 - Windows 10/11 x64
 - Python 3.11.9
-- gvsbuild 2026（GTK 3.24.52）位于 `F:\gtk-build`
+- gvsbuild 2026（GTK 3.24.52）
 - NSIS 3.x 位于 `C:\Program Files (x86)\NSIS`
 - 官方 SkyTemple 1.8.4 源码（`skytemple-master/`）
 - 中文字符映射表（`charmap.txt`）
