@@ -1,4 +1,8 @@
 ﻿# SkyTemple CN Build Script v2
+# 注意：本脚本包含本机构建环境的硬编码路径（F:\Skytemple、F:\gtk-build、F:\project53），
+# 仅供在相同环境布局的机器上使用。如需在其他环境构建，请相应修改以下路径配置。
+
+# SkyTemple CN Build Script v2
 # Based on build_cn.ps1, official build + CN patches
 $ErrorActionPreference = "Stop"
 Set-Location "F:\Skytemple\skytemple-master\installer"
@@ -125,5 +129,6 @@ if (Test-Path $SETUP) {
     if ($out) { Write-Host "Output: $($out.FullName)" }
     else { Write-Host "=== NSIS FAILED ===" }
 }
+
 
 

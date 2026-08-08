@@ -22,7 +22,7 @@ for _p in [
     getattr(_sys, "_MEIPASS", ""),
     _os.path.join(_os.environ.get("LOCALAPPDATA", ""), "skytemple", "_internal"),
     r"C:\Program Files\SkyTemple\_internal",
-    r"F:\Skytemple\.dll_test",
+
 ]:
     if _p and _os.path.exists(_p): _ST_INTERNAL = _p; break
 if _ST_INTERNAL is None:
