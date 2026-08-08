@@ -1,4 +1,5 @@
-﻿# SkyTemple CN Build Guide
+﻿> **路径说明**：以下命令中的 `<你的工作目录>` 和 `<gvsbuild 安装路径>` 请替换为你本机的实际路径。
+# SkyTemple CN Build Guide
 
 ## 环境要求
 
@@ -26,21 +27,21 @@ skytemple-master/
     └── skytemple_cn.nsi
 ```
 
-将 `overrides/` 目录复制到 `F:\Skytemple\overrides\`。
+将 `overrides/` 目录复制到 `<你的工作目录>\overrides\`。
 
 ### 2. 准备依赖
 
 ```powershell
-python -m venv F:\Skytemple\.venv_build
-F:\Skytemple\.venv_build\Scripts\pip install -r skytemple-master\requirements-frozen.txt
-F:\Skytemple\.venv_build\Scripts\pip install -e "F:\Skytemple\skytemple-master[eventserver,discord]" --no-deps
+python -m venv <你的工作目录>\.venv_build
+<你的工作目录>\.venv_build\Scripts\pip install -r skytemple-master\requirements-frozen.txt
+<你的工作目录>\.venv_build\Scripts\pip install -e "<你的工作目录>\skytemple-master[eventserver,discord]" --no-deps
 ```
 
 安装 gvsbuild 2026 编译的 PyGObject 和 pycairo wheel：
 
 ```powershell
-F:\Skytemple\.venv_build\Scripts\pip install --force-reinstall F:\gtk-build\build\x64\release\pygobject\dist\PyGObject*.whl
-F:\Skytemple\.venv_build\Scripts\pip install --force-reinstall F:\gtk-build\build\x64\release\pycairo\dist\pycairo*.whl
+<你的工作目录>\.venv_build\Scripts\pip install --force-reinstall <gvsbuild 安装路径>\build\x64\release\pygobject\dist\PyGObject*.whl
+<你的工作目录>\.venv_build\Scripts\pip install --force-reinstall <gvsbuild 安装路径>\build\x64\release\pycairo\dist\pycairo*.whl
 ```
 
 ### 3. 编译翻译
@@ -63,7 +64,7 @@ msgfmt -o output.mo dedup.po
 ### 4. 打包
 
 ```powershell
-F:\Skytemple\.venv_build\Scripts\pyinstaller --log-level=WARN --noconfirm skytemple.spec
+<你的工作目录>\.venv_build\Scripts\pyinstaller --log-level=WARN --noconfirm skytemple.spec
 ```
 
 将以下文件放入 `dist\skytemple\_internal\`：
@@ -96,4 +97,5 @@ SkyTemple 使用 PMD2 自定义字符编码（`pmd2str`）。本补丁通过 `ch
 ## 许可证
 
 GPL v3。本补丁基于 [SkyTemple](https://github.com/SkyTemple/skytemple) 修改。
+
 
