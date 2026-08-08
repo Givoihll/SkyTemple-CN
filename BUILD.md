@@ -45,7 +45,20 @@ F:\Skytemple\.venv_build\Scripts\pip install --force-reinstall F:\gtk-build\buil
 
 ### 3. 编译翻译
 
-使用 gvsbuild 自带的 msgfmt 编译各语言 PO → MO。中文 PO 来自 `skytemple.po`（已包含 13,000+ 条翻译）。
+先将 `skytemple.po` 放到 `skytemple-master\skytemple\data\locale\zh_CN\LC_MESSAGES\`，替换官方自带的简体中文 PO（官方版翻译不完整）。
+
+然后使用 gvsbuild 自带的 msgfmt 编译各语言 PO → MO：
+
+```powershell
+# 所有语言（zh_CN 除外）
+msgfmt -o output.mo input.po
+
+# zh_CN 特殊处理：官方 PO 含重复 msgid，必须先去重
+msguniq --to-code=UTF-8 --output-file=dedup.po input.po
+msgfmt -o output.mo dedup.po
+```
+
+`skytemple.po` 已包含 13,000+ 条中文翻译。
 
 ### 4. 打包
 
@@ -83,3 +96,4 @@ SkyTemple 使用 PMD2 自定义字符编码（`pmd2str`）。本补丁通过 `ch
 ## 许可证
 
 GPL v3。本补丁基于 [SkyTemple](https://github.com/SkyTemple/skytemple) 修改。
+
