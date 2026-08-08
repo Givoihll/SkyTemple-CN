@@ -1,5 +1,17 @@
 ﻿# SkyTemple CN
 
+A Chinese-localized build of SkyTemple 1.8.4, based on the official [SkyTemple](https://github.com/SkyTemple/skytemple).
+
+* Full Chinese UI (13,000+ translated strings, provided by 电子 / dianzi_71480)
+* Chinese text editing in the Script Engine Debugger (S.E.D.)
+* Chinese text editing in the Strings module (text_e.str)
+* Custom PMD2 charmap (7,251 CJK characters)
+* User-level installer, no admin required
+
+Download the latest installer from the [Releases](https://github.com/Givoihll/SkyTemple-CN/releases) page.
+
+---
+
 SkyTemple 1.8.4 中文版 —— 基于官方 [SkyTemple](https://github.com/SkyTemple/skytemple) 的中文本地化构建。
 
 ## 功能
@@ -37,9 +49,4 @@ GPL v3，基于 [SkyTemple](https://github.com/SkyTemple/skytemple) 修改。
 
 - SkyTemple 团队（特别感谢 Chesyon 和 Frostbyte0x70 的构建修复）
 - 奈亚拉托电子（dianzi_71480）：UI 界面中文翻译
-- Chesyon：PR #844 修复 Windows/Mac 构建流水线
-- Frostbyte0x70：PR #844 审查与合并
 - Givoill & 茸明_Edelherd：空之探险队脚本编辑教程
-
-
-
