@@ -35,7 +35,8 @@ GPL v3，基于 [SkyTemple](https://github.com/SkyTemple/skytemple) 修改。
 
 ## 致谢
 
-- SkyTemple 官方团队（Parakoopa, Capypara, Marco Köpcke 等）
+- SkyTemple 上游开发者（Marco Köpcke, irdkwia, End45, tech-ticks, Chesyon, Frostbyte0x70 等）
 - Chesyon：PR #844 修复 Windows/Mac 构建流水线
 - Frostbyte0x70：PR #844 审查与合并
 - Givoill & 茸明_Edelherd：空之探险队脚本编辑教程
+
